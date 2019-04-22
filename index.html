@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <div class="container">
+    <header class="titleBar">
+      <section class="">
+        <form action="javascript:;" id="form">
+          <label for="">ToDoList</label>
+          <input type="text" placeholder="添加todo" required autocomplete="off" id="title" name="title">
+        </form>
+      </section>
+    </header>
+    <section class="content">
+      <h2>
+        正在进行
+        <span id="todo-count">1</span>
+      </h2>
+      <ul id="todoList">
+        <li>
+          <input type="checkbox">
+          <p id="todoContent">111111</p>
+          <a href="javascript:void(0);" >删除</a>
+        </li>
+      </ul>
+      <h2>
+        已经完成
+        <span id="doneCount">2</span>
+      </h2>
+      <ul id="doneList">
+        <li>
+          <input type="checkbox">
+          <p id="doneContent">111111</p>
+          <a href="javascript:void(0);">删除</a>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <a href="javascript:void(0);">TodolistDemo-叶俊宽</a>
+    </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</html>
